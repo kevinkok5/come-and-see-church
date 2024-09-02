@@ -1,0 +1,134 @@
+.site-contact {
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-top: 6rem;
+    font-family: "Inter", sans-serif !important;
+
+    .container {
+        > div {
+            height: 100%;
+
+            > div {
+                width: 100%;
+                // height: 100%;
+            }
+            .left {
+                display: grid;
+                place-items: center;
+                div {
+                    // background-color: red;
+                    padding: 4rem;
+                    transform: translateY(-4rem);
+
+                    .heading {
+                        font-weight: bold;
+                        margin-bottom: 3rem;
+                    }
+                    .subheading {
+                        font-size: 16px;
+                        font-size: 16px;
+                        color: rgb(121, 119, 119);
+                    }
+                    @media screen and (max-width: 991px) {
+                        & {
+                            padding: 1rem;
+                            text-align: center;
+                            transform: translateY(0);
+
+                            .heading {
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    }
+                    @media screen and (max-width: 450px) {
+                        & {
+                            padding: 1rem;
+                            text-align: center;
+
+                            .heading {
+                                font-size: 32px;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                // background-color: yellow;
+                display: grid;
+                place-items: center;
+
+                .card {
+                    background-color: transparent;
+                    height: fit-content;
+                    min-height: 500px;
+                    width: 70%;
+                    min-width: 350px;
+                    border: none;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+                    padding: 2rem;
+
+                    form {
+                        // background-color: red;
+                        display: grid;
+                        gap: 2rem;
+                        flex-direction: columns;
+                        div:first-child {
+                            width: 100%;
+                            display: grid;
+                            gap: 0.5rem;
+                            grid-template-columns: repeat(
+                                auto-fit,
+                                minmax(10rem, 1fr)
+                            );
+
+                            // background-color: red;
+                        }
+
+                        input,
+                        textarea {
+                            display: block;
+                            padding: 6px 12px;
+                            width: 100%;
+                            height: 50px;
+                            border-radius: 10px;
+                            border: 1px solid #ced4da;
+                            color: #212529;
+                            font-size: 1rem;
+                            transition: border-color 0.15s ease-in-out,
+                                box-shadow 0.15s ease-in-out;
+                            &:focus,
+                            &:active {
+                                outline: none;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                border-color: $backgroundColor;
+                                -webkit-box-shadow: 0 1px 4px 0
+                                    rgba(0, 0, 0, 0.2);
+                                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+                            }
+                        }
+
+                        .btn-primary {
+                            border-radius: 10px !important;
+                            font-size: 16px !important;
+                            font-weight: 700;
+                        }
+
+                        textarea {
+                            resize: none;
+                            height: 120px;
+                            width: 100% !important;
+                            height: 170px !important;
+                        }
+                        div:first-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

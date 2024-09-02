@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/aos.css" />
+
+        <link rel="stylesheet" href="./css/style1.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="fonts/icomoon/style.css" />
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/glightbox.min.css" />
+    </head>
+    <body>
+        <!-- Overlay -->
+        <div class="custome-overlay" id="custome-overlay">
+            <span id="closePopup">X</span>
+        </div>
+
+        <!-- Popup Container -->
+        <div class="popup" id="popup">
+            <div class="video-container">
+                <div id="player"></div>
+                <div class="custom-controls">
+                    <span class="play-pause">▶</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time-display">00:00 / 00:00</span>
+                    <span class="fullscreen-toggle">⛶</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <header> -->
+        <nav class="site-nav">
+            <div class="container">
+                <div class="site-navigation">
+                    <a href="index.html" class="logo m-0 float-left"
+                        >TheChurch</a
+                    >
+
+                    <ul
+                        class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+                    >
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="has-children">
+                            <a href="sermons.html">Sermons</a>
+                            <ul class="dropdown">
+                                <li><a href="sermons.html">Sermons</a></li>
+                                <li>
+                                    <a href="sermons-single.html"
+                                        >Sermons Single</a
+                                    >
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Dropdown</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#">Sub Menu One</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Menu Two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Menu Three</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Ministries</a></li>
+                        <li class="active"><a href="event.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="cta-button">
+                            <a href="contact.html">Request a prayer</a>
+                        </li>
+                    </ul>
+
+                    <a
+                        href="#"
+                        class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                        data-toggle="collapse"
+                        data-target="#main-navbar"
+                    >
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- style="background-image: url('images/hero_1.jpg'); " -->
+        <div
+            class="hero overlay event-page"
+            style="background-image: url('images/landscape-1.jpg')"
+        >
+            <div class="container">
+                <h1>Up coming event</h1>
+            </div>
+        </div>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <div class="title">
+                    <div class="col-lg-5" data-aos="fade-up">
+                        <span class="subheading mb-4 d-block">Event</span>
+                        <h1 class="mb-4 heading">Our Up Coming Event</h1>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="" data-aos="fade-up">
+                        <div class="image-container">
+                            <img src="./images/event_1.png" alt="" />
+                            <span>Read more</span>
+                        </div>
+                        <!-- <div class="content">
+                            <span>15 Jan 2020 • By Pastor Campbell</span>
+                            <h3>Live the message</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. In ratione nulla molestias
+                                reprehenderit et sunt cupiditate assumenda
+                                impedit labore eos necessitatibus rem, enim at,
+                                molestiae quam eius vero error ipsa.
+                            </p>
+                            <a
+                                href="https://youtu.be/X90y1bP977A"
+                                class="video-bg glightbox"
+                                >Watch <span>-></span></a
+                            >
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location d-lg-flex">
+            <div class="right" data-aos="fade-up">
+                <div class="content">
+                    <h1 class="mb-4 heading">
+                        Our Services
+                        <hr />
+                    </h1>
+                    <div class="d-flex schedule">
+                        <div>
+                            <h4>Wednesday</h4>
+                            <span> 5PM - 7PM </span>
+                        </div>
+                        <div>
+                            <h5>YOUTH GROUP (GRADES 6-12)</h5>
+                            <p>
+                                @ Come and See Church Gospel for All
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >directions</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex schedule">
+                        <div>
+                            <h4>Wednesday</h4>
+                            <span> 5PM - 7PM </span>
+                        </div>
+                        <div>
+                            <h5>YOUTH GROUP (GRADES 6-12)</h5>
+                            <p>
+                                @ Come and See Church Gospel for All
+
+                                <a
+                                    href="https://www.google.com/maps/dir//2+Mildura+St+Kensington+Johannesburg+2101/@-26.196889,28.0985291,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e950e0fc5d12b35:0x1ca22137d7c7a902!2m2!1d28.0985291!2d-26.196889?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >directions</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left" data-aos="fade-up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.993670840886!2d28.095948810818335!3d-26.19688416358004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e0fc5d12b35%3A0x1ca22137d7c7a902!2s2%20Mildura%20St%2C%20Kensington%2C%20Johannesburg%2C%202101!5e0!3m2!1sen!2sza!4v1724437104056!5m2!1sen!2sza&maptype=roadmap&mapTypeControl=0&fullscreenControl=0&zoomControl=0&streetViewControl=0&scaleControl=0&disableDefaultUI=1"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen="true"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="news_letter mb-4" data-aos="fade-up">
+                    <div class="d-flex">
+                        <span class="icon-mail_outline"></span>
+                        <h5 class="subheading">Subscribe to Newsletter</h5>
+                    </div>
+                    <form action="">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button class="btn btn-primary">
+                            <span class="icon-send2"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="content" data-aos="fade-up">
+                    <h2 class="mb-4 heading">Gospel ministry</h2>
+                    <div class="d-md-flex g-5 mb-5">
+                        <div class="content_description">
+                            <p class="mb-4">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Eveniet consequatur eum, fugit
+                                neque officiis maxime id accusamus ipsa
+                                perspiciatis nesciunt. Obcaecati, provident
+                                doloribus! Quas ab laudantium, reprehenderit eum
+                                labore ipsam!
+                            </p>
+                            <ul class="list-unstyled socials mt-4">
+                                <li>
+                                    <a href="#"
+                                        ><span class="icon-facebook"></span
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><span class="icon-instagram"></span
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><span class="icon-youtube"></span
+                                    ></a>
+                                </li>
+                                <!-- <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li> -->
+                            </ul>
+                        </div>
+
+                        <div class="">
+                            <div class="">
+                                <div class="">
+                                    <span class="subheading mb-4 d-block"
+                                        >Page</span
+                                    >
+                                    <p>Home</p>
+                                    <p>Contact Us</p>
+                                    <p>About us</p>
+                                    <p>Events</p>
+                                </div>
+                                <div class="">
+                                    <span class="subheading mb-4 d-block"
+                                        >Page</span
+                                    >
+                                    <p>Home</p>
+                                    <p>Contact Us</p>
+                                    <p>About us</p>
+                                    <p>Events</p>
+                                </div>
+                                <div class="">
+                                    <span class="subheading mb-4 d-block"
+                                        >Page</span
+                                    >
+                                    <p>Home</p>
+                                    <p>Contact Us</p>
+                                    <p>About us</p>
+                                    <p>Events</p>
+                                </div>
+                                <div class="">
+                                    <span class="subheading mb-4 d-block"
+                                        >Page</span
+                                    >
+                                    <p>Home</p>
+                                    <p>Contact Us</p>
+                                    <p>About us</p>
+                                    <p>Events</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/script.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <!-- <script
+            type="text/javascript"
+            src="js/multi-items-carousel.js"
+        ></script> -->
+        <script src="js/glightbox.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+        <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+a#videoLink {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    /* padding: 12px 24px; */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/* a#videoLink:hover {
+    background-color: #2980b9;
+} */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgb(222, 24, 24); */
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 768px;
+    width: 100%;
+    min-width: 200px;
+    aspect-ratio: 16/9;
+}
+
+.custome-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgb(0, 0, 0);
+    z-index: 999;
+}
+
+.custome-overlay #closePopup {
+    display: inline-block;
+    font-size: 35px;
+    color: rgb(229, 227, 227); 
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#closePopup:hover {
+    color: rgb(255, 255, 255);
+}
+
+.popup .video-container {
+    max-width: inherit;
+    width: inherit;
+    height: fit-content !important;
+    /* background-color: yellow; */
+    min-width: inherit;
+    aspect-ratio: inherit;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.popup .video-container #player {
+    width: 100%;
+    height: 100%;
+}
+
+.popup .video-container .custom-controls {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    /* height: 22px; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 0 0 10px 10px;
+    transition: display .4s ease-in-out;
+
+
+}
+.popup .video-container:hover .custom-controls {
+    display: flex;
+}
+
+.popup .video-container .custom-controls .progress-bar-container {
+    flex-grow: 1;
+    margin: 0 10px;
+    height: 5px;
+    background-color: #34495e;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.popup .video-container .custom-controls .progress-bar-container .progress-bar {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 3px;
+    width: 0;
+}
+
+.popup .video-container .custom-controls .play-pause,
+.popup .video-container .custom-controls .fullscreen-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+
+.popup .video-container .custom-controls .play-pause:hover,
+.popup .video-container .custom-controls .fullscreen-toggle:hover {
+    color: #f39c12;
+}
+
+.popup .video-container .custom-controls .time-display {
+    font-size: 14px;
+}
