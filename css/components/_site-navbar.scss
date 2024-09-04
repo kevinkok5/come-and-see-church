@@ -18,8 +18,8 @@ $white: white;
         color: rgba($white, 0.85);
     }
     img {
-        width: 38px;
-        height: 38px;
+        width: 42px;
+        height: 42px;
         border-radius: 50%;
     }
 }
@@ -60,7 +60,6 @@ $white: white;
                         border: 2px solid rgba($white, 0.1);
                         color: $white;
                         border-radius: 30px;
-                        // font-size: 10px!important;
 
                         &:hover {
                             color: $white !important;

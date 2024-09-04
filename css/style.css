@@ -9,7 +9,8 @@
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
+  margin-top: 6rem;
   font-family: "Inter", sans-serif !important;
 }
 .site-contact .container > div {
@@ -131,8 +132,8 @@
   color: rgba(255, 255, 255, 0.85);
 }
 .logo img {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
 }
 
@@ -636,7 +637,6 @@ body {
   overflow-x: hidden;
   color: #888;
   background: #f5fafa !important;
-  position: relative;
 }
 
 body.activeNavBar {
@@ -1843,12 +1843,6 @@ footer .content > div > div:last-child > div {
 .event .event-popup:nth-child(3) {
   background-color: white;
   padding: 0;
-}
-.event .event-popup:nth-child(3) nav {
-  border: none !important;
-  box-shadow: none !important;
-  position: sticky;
-  top: 0;
 }
 .event .event-popup:nth-child(3) .popup-content {
   max-width: 100% !important;
