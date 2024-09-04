@@ -17,11 +17,16 @@ $white: white;
     &:hover {
         color: rgba($white, 0.85);
     }
+    img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+    }
 }
 .site-nav {
     position: absolute;
     top: 0;
-    z-index: 9;
+    z-index: 20;
     width: 100%;
 }
 
@@ -209,7 +214,7 @@ $white: white;
             &:hover {
                 color: rgba(black, 0.85);
             }
-        } 
+        }
 
         .site-navigation {
             .site-menu {
@@ -237,6 +242,13 @@ $white: white;
                             color: black;
                         }
                     }
+                }
+            }
+            .burger {
+                &.light:before,
+                &.burger.light span,
+                &.burger.light:after {
+                    background: rgb(0, 0, 0);
                 }
             }
         }
@@ -275,16 +287,31 @@ $white: white;
     }
 }
 
+.site-mobile-menu_overlay {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, 0.436);
+    height: 100dvh;
+
+    &.active {
+        display: block;
+    }
+}
 // mobile menu
 .site-mobile-menu {
     display: none;
     width: 300px;
     position: fixed;
     left: 0;
+    top: 0;
     z-index: 2000;
     padding-top: 20px;
     background: white;
-    height: calc(100vh);
+    height: 100dvh;
 
     transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
 
@@ -342,7 +369,6 @@ $white: white;
         position: relative;
         padding: 0 20px 20px 20px;
         // background-color: red;
-
 
         height: calc(100vh - 52px);
         padding-bottom: 150px;
@@ -518,6 +544,7 @@ $white: white;
     height: 32px;
     cursor: pointer;
     position: relative;
+    z-index: 2000;
     &.light {
         &:before,
         span,

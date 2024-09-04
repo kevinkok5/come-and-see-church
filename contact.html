@@ -20,6 +20,32 @@
         <link rel="stylesheet" href="css/glightbox.min.css" />
     </head>
     <body>
+        <!-- mobile menu -->
+        <div
+            class="site-mobile-menu_overlay d-lg-none"
+            id="site-mobile-menu_overlay"
+        ></div>
+        <div
+            class="site-mobile-menu site-navbar-target d-lg-none"
+            id="site-mobile-menu"
+        >
+            <div class="site-mobile-menu-body">
+                <ul
+                    class="js-clone-nav d-lg-inline-block site-menu float-end site-nav-wrap"
+                >
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="about.html">Ministries</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cta-button">
+                        <a href="contact.html">Request a prayer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <nav class="site-nav white-variant">
             <div class="container">
                 <div class="site-navigation">
@@ -69,8 +95,7 @@
                     <a
                         href="#"
                         class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
-                        data-toggle="collapse"
-                        data-target="#main-navbar"
+                        id="site-menu-toggle"
                     >
                         <span></span>
                     </a>
@@ -289,6 +314,7 @@
             </div>
         </footer>
     </body>
+    <script src="./js/script.js"></script>
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 

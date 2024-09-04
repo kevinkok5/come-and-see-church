@@ -12,11 +12,25 @@ document.addEventListener("DOMContentLoaded", () => {
         // The player will be created dynamically when the video link is clicked
     }
 
-
     // Display mobile menu for navigation
     var siteMobileMenu = document.getElementById("site-mobile-menu");
     var siteMenutoggle = document.getElementById("site-menu-toggle");
+    var siteMobileMenuOverlay = document.getElementById(
+        "site-mobile-menu_overlay"
+    );
 
+    siteMenutoggle.addEventListener("click", function () {
+        document.body.classList.toggle("activeNavBar");
+        siteMenutoggle.classList.toggle("active");
+        siteMobileMenu.classList.toggle("active");
+        siteMobileMenuOverlay.classList.toggle("active");
+    });
+    siteMobileMenuOverlay.addEventListener("click", function () {
+        document.body.classList.toggle("activeNavBar");
+        siteMenutoggle.classList.toggle("active");
+        siteMobileMenu.classList.toggle("active");
+        siteMobileMenuOverlay.classList.toggle("active");
+    });
 
     // Variables for the controls
     var videoLink = document.getElementById("videoLink");
@@ -159,11 +173,5 @@ document.addEventListener("DOMContentLoaded", () => {
         var seekTime = videoDuration * clickPercentage;
         player.seekTo(seekTime, true);
         updateProgressBar(); // Update the progress bar to reflect the new time
-    });
-
-    siteMenutoggle.addEventListener("click", function () {
-        document.body.classList.toggle("activeNavBar")
-        siteMenutoggle.classList.toggle("active");
-        siteMobileMenu.classList.toggle("active");
     });
 });
